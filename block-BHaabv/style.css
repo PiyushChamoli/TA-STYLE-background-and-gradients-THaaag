@@ -1,0 +1,225 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Custom Style*/
+
+/*General*/
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+body{
+    background-color: #20222f;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Header*/
+
+.header{
+    padding: 50px 30px;
+}
+.header .head-left h1{
+    font-size: 34px;
+    color: white;
+    font-weight: 700;
+}
+.header .head-left p{
+    font-size: 17px;
+    color: #959aba;
+    padding: 10px 0;
+    font-weight: 500;
+}
+.head-right{
+    align-self: flex-start;
+}
+.head-right p{
+    font-size: 17px;
+    color: #959aba;
+    display: inline;
+    font-weight: 500;
+}
+.head-right i{
+    margin-left: 10px;
+    font-size: 30px;
+    color: white;
+    vertical-align: middle;
+}
+
+/*Hero_section*/
+
+
+.hero-section{
+    text-align: center;
+}
+.col{
+    flex: 0 1 23%;
+    background-color: #252c47;
+    padding: 20px 0;
+    border-radius: 8px;
+}
+.hero-section .hero-a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    color: #1e8ceb;
+    font-weight: 500;
+    padding: 22px 0;
+}
+.hero-section .hero-a i{
+    font-size: 24px;
+    margin-right: 7px;
+    vertical-align: middle;
+}
+.hero-section .four i{
+    color: #c13830;
+}
+.hero-section .two i{
+    color: #179ef4;
+}
+.hero-section .three i{
+    color: #f29e72;
+}
+.hero-section .hero-no{
+    font-size: 62px;
+    font-weight: 600;
+    color: white;
+}
+.hero-section .hero-text{
+    color: #8990ac;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-top: 7px;
+}
+.hero-section .hero-count{
+    color: #469e90;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 27px 0;
+}
+.hero-section .four-count{
+    color: #a04757;
+}
+.bone{
+    border-top: 4px solid #188ff5;
+}
+.btwo{
+    border-top: 4px solid #1aa2f4;
+}
+.bthree{
+    border-top: 4px solid transparent;
+    background: 
+     linear-gradient(#252c47,#252c47) padding-box, /*this is your grey background*/
+     linear-gradient(to right, #fbbd66, #fb3570) border-box;
+}
+.bfour{
+    border-top: 4px solid #c53928;
+}
+/*Second_section*/
+
+.second-section h2{
+    font-size: 26px;
+    color: white;
+    padding-top: 90px;
+    font-weight: 700;
+}
+.col-lower{
+    padding: 20px 25px;
+    margin-bottom: 22px;
+}
+.headache{
+    margin: 30px 0;
+}
+.upper h3{
+    color: #9ba3c7;
+    font-size: 17px;
+    font-weight: 600;
+}
+.upper i{
+    color: #1a8df0;
+    font-size: 25px;
+    vertical-align: middle;
+}
+.lower{
+    padding-top: 20px;
+}
+.lower .lowup{
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+}
+.lower .lowdown{
+    color: #469e90;
+    font-size: 14px;
+    font-weight: 600;
+    align-self: flex-end;
+}
+.lower .lowdown i{
+    margin-right: 3px;
+}
+.sevens .upper i, .eights .upper i{
+    color: #c13830;
+}
+.threes .upper i, .fours .upper i{
+    color: #f29e72;
+}
+.twos .lowdown, .sevens .lowdown, .eights .lowdown{
+    color: #a04757;
+}
